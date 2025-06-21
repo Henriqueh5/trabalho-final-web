@@ -1,0 +1,13 @@
+body {
+    padding-bottom: 50px;
+}
+
+header img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}

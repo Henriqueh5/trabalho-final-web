@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fale Conosco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Biblioteca Virtual</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Fale Conosco</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label>Nome:</label>
+                <input type="text" id="nome" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Email:</label>
+                <input type="email" id="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Mensagem:</label>
+                <textarea id="mensagem" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label>Motivo:</label>
+                <select id="motivo" class="form-select">
+                    <option value="">Selecione</option>
+                    <option>Elogio</option>
+                    <option>Crítica</option>
+                    <option>Sugestão</option>
+                    <option>Agradecimento à equipe</option>
+                    <option>Memórias afetivas</option>
+                </select>
+            </div>
+            <button type="button" onclick="validarFormulario()" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

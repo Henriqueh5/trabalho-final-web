@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Livros</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Universo da Leitura</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="livros.html">Lista de Livros</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Nosso Acervo</h2>
+        <input type="text" id="searchInput" class="form-control mb-3" placeholder="Buscar livro..." oninput="searchBook()">
+
+        <div class="row" id="bookList">
+            <div class="col-md-4 mb-3 book-card" data-title="O Senhor dos Anéis">
+                <div class="card">
+                    <img src="img/capa1.jpg" class="card-img-top" alt="Livro 1">
+                    <div class="card-body">
+                        <h5 class="card-title">O Senhor dos Anéis</h5>
+                        <p>Autor: J.R.R. Tolkien</p>
+                        <p>Categoria: Fantasia</p>
+                        <a href="detalhes/livro1.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 book-card" data-title="O Pequeno Príncipe">
+                <div class="card">
+                    <img src="img/capa2.jpg" class="card-img-top" alt="O Pequeno Príncipe">
+                    <div class="card-body">
+                        <h5 class="card-title">O Pequeno Príncipe</h5>
+                        <p>Autor: Antoine de Saint-Exupéry</p>
+                        <p>Categoria: Infantojuvenil</p>
+                        <a href="detalhes/livro2.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+           <div class="col-md-4 mb-3 book-card" data-title="One Piece">
+                <div class="card">
+                    <img src="img/capa3.jpg" class="card-img-top" alt="One Piece">
+                    <div class="card-body">
+                        <h5 class="card-title">One Piece</h5>
+                        <p>Autor: Eiichiro Oda</p>
+                        <p>Categoria: Mangá / Aventura</p>
+                        <a href="detalhes/livro3.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 book-card" data-title="Jujutsu Kaisen">
+                <div class="card">
+                    <img src="img/capa4.jpg" class="card-img-top" alt="Jujutsu Kaisen">
+                    <div class="card-body">
+                        <h5 class="card-title">Jujutsu Kaisen</h5>
+                        <p>Autor: Gege Akutami</p>
+                        <p>Categoria: Mangá / Ação</p>
+                        <a href="detalhes/livro4.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 book-card" data-title="A Cabana">
+                <div class="card">
+                    <img src="img/capa5.jpg" class="card-img-top" alt="A Cabana">
+                    <div class="card-body">
+                        <h5 class="card-title">A Cabana</h5>
+                        <p>Autor: William P. Young</p>
+                        <p>Categoria: Ficção / Religioso</p>
+                        <a href="detalhes/livro5.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
